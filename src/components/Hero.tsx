@@ -47,7 +47,7 @@ const Hero = () => {
           className="text-2xl md:text-3xl text-primary font-semibold mb-4 animate-fade-in"
           style={{ animationDelay: "0.3s" }}
         >
-          Aspiring Software Developer & AI Enthusiast
+          Software Developer & AI Enthusiast
         </p>
 
         <p
