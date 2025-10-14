@@ -29,7 +29,7 @@ const projects = [
     title: "TidBit | Terms & Conditions Summarizer",
     description:
       "NLP-powered tool that summarizes lengthy legal documents and terms of service into digestible, easy-to-understand summaries using transformer models.",
-    tech: ["ML", "Flask", "Python", "NLP"],
+    tech: ["ML","Flask", "Python", "NLP"],
     github: "https://github.com/navs42/TidBit-Terms-Conditions-Summarizer.git",
     link: "",
   },
