@@ -29,7 +29,7 @@ const projects = [
     title: "TidBit | Terms & Conditions Summarizer",
     description:
       "NLP-powered tool that summarizes lengthy legal documents and terms of service into digestible, easy-to-understand summaries using transformer models.",
-    tech: ["ML","Flask", "Python", "NLP"],
+    tech: ["ML", "Flask", "Python", "NLP"],
     github: "https://github.com/navs42/TidBit-Terms-Conditions-Summarizer.git",
     link: "",
   },
@@ -48,76 +48,83 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="py-20 bg-background">
-      <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
-
-      <div className="flex flex-wrap gap-2 justify-center mb-8">
-        <button
-          className={`px-4 py-2 rounded ${
-            selectedSkill === null
-              ? "bg-primary text-white"
-              : "bg-muted text-foreground"
-          }`}
-          onClick={() => setSelectedSkill(null)}
-        >
-          All
-        </button>
-        {allSkills.map((skill) => (
-          <button
-            key={skill}
-            className={`px-4 py-2 rounded ${
-              selectedSkill === skill
-                ? "bg-primary text-white"
-                : "bg-muted text-foreground"
-            }`}
-            onClick={() => setSelectedSkill(skill)}
-          >
-            {skill}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-8">
-        {filteredProjects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-card p-6 rounded-lg shadow-md flex flex-col gap-4"
-          >
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <div className="flex flex-wrap gap-2 mb-2 justify-start">
-              {project.tech.map((tech, i) => (
-                <span
-                  key={i}
-                  className="px-2 py-1 bg-muted rounded text-xs text-foreground"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <p className="text-muted-foreground">{project.description}</p>
-            <div className="flex gap-3 mt-auto">
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
-                >
-                  GitHub
-                </a>
-              )}
-              {project.link && project.link !== "" && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/90 transition-colors"
-                >
-                  Live Demo
-                </a>
-              )}
-            </div>
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
+            Projects
+          </h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-2 justify-center mb-8">
+            <button
+              className={`px-4 py-2 rounded ${
+                selectedSkill === null
+                  ? "bg-primary text-white"
+                  : "bg-muted text-foreground"
+              }`}
+              onClick={() => setSelectedSkill(null)}
+            >
+              All
+            </button>
+            {allSkills.map((skill) => (
+              <button
+                key={skill}
+                className={`px-4 py-2 rounded ${
+                  selectedSkill === skill
+                    ? "bg-primary text-white"
+                    : "bg-muted text-foreground"
+                }`}
+                onClick={() => setSelectedSkill(skill)}
+              >
+                {skill}
+              </button>
+            ))}
           </div>
-        ))}
+          {/* Project Grid/List */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {filteredProjects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-card p-6 rounded-lg shadow-md flex flex-col gap-4"
+              >
+                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <div className="flex flex-wrap gap-2 mb-2 justify-start">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 bg-muted rounded text-xs text-foreground"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-muted-foreground">{project.description}</p>
+                <div className="flex gap-3 mt-auto">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-colors"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                  {project.link && project.link !== "" && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 bg-secondary text-secondary-foreground rounded hover:bg-secondary/90 transition-colors"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
