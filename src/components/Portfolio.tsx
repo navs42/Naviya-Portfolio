@@ -33,6 +33,13 @@ const projects = [
     github: "https://github.com/navs42/TidBit-Terms-Conditions-Summarizer.git",
     link: "",
   },
+  {
+    title: "Yotube trend Analayzer using n8n",
+    description: 
+      "An automated workflow built with n8n that fetches YouTube videos for a given topic, filters the top trending ones, and saves them automatically to Google Sheets for easy analysis.",
+    tech:["n8n","YouTube Data API", "Google Sheets API", "JavaScript (workflow scripting)"],
+    github:"https://github.com/navs42/youtube-trend-analyzer-n8n.git"
+  }
 ];
 
 const allSkills = Array.from(
