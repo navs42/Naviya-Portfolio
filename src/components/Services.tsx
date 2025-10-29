@@ -1,5 +1,5 @@
 import { Card } from "../components/ui/card";
-import { Smartphone, Brain } from "lucide-react";
+import { Smartphone, Brain ,WorkflowIcon} from "lucide-react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 const Services = () => {
@@ -19,6 +19,12 @@ const Services = () => {
       description:
         "NLP, ML model development, deployment, and data-driven insights. I create intelligent systems that learn, adapt, and provide meaningful predictions for real-world problems.",
       technologies: ["Python", "TensorFlow", "NLP", "BERT", "Data Processing", "Flask"],
+    },{
+      icon:WorkflowIcon ,
+      title: "n8n Automations",
+      description:
+        "Workflow automation, system integration, and process optimization. I design intelligent n8n workflows that connect apps, automate repetitive tasks, and streamline business operations with efficiency and precision.",
+      technologies: ["n8n", "JavaScript", "Google WorkSpace APIs", "WEbHooks", "RestAPIs", "JSON/HTTP Requests"],
     },
   ];
 
