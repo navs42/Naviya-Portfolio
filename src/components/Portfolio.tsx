@@ -26,6 +26,14 @@ const projects = [
     link: "",
   },
   {
+    title: "SmartHire AI | AI-Powered Resume Screening & Shortlisting System using n8n",
+    description:
+      "AI-powered automation system using n8n that extracts resumes from emails, analyzes them against job descriptions, and logs evaluation results in Google Sheets.",
+    tech: ["n8n","Gemini AI", "Google Drive", "Google sheets","Gmail API"],
+    github: "https://github.com/navs42/SmartHire-AI.git",
+    link: "",
+  },
+  {
     title: "TidBit | Terms & Conditions Summarizer",
     description:
       "NLP-powered tool that summarizes lengthy legal documents and terms of service into digestible, easy-to-understand summaries using transformer models.",
