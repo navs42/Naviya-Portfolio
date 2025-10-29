@@ -1,5 +1,5 @@
 import { Card } from "../components/ui/card";
-import { GraduationCap, Code, Brain, Cloud, Palette, Settings } from "lucide-react";
+import { GraduationCap, Code, Brain, Cloud, Palette, Settings, WorkflowIcon } from "lucide-react";
 import profileImg from "../assets/profile.jpg";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
@@ -34,6 +34,7 @@ const About = () => {
     { category: "Development", icon: Settings, items: ["React Native", "Spring Boot", "Firebase", "Git"] },
     { category: "Cloud & Tools", icon: Cloud, items: ["Firebase", "REST APIs", "Automation (n8n)"] },
     { category: "Design", icon: Palette, items: ["Figma", "UI/UX", "Accessibility Design"] },
+    { category: "Automation", icon: WorkflowIcon, items: ["n8n", "Google WorkSpace APIs", "WebHooks", "RestAPIs", "JSON/HTTP Requests"] },
   ];
 
   return (

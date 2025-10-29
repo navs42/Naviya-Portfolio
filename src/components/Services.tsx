@@ -24,7 +24,7 @@ const Services = () => {
       title: "n8n Automations",
       description:
         "Workflow automation, system integration, and process optimization. I design intelligent n8n workflows that connect apps, automate repetitive tasks, and streamline business operations with efficiency and precision.",
-      technologies: ["n8n", "JavaScript", "Google WorkSpace APIs", "WEbHooks", "RestAPIs", "JSON/HTTP Requests"],
+      technologies: ["n8n", "JavaScript", "Google WorkSpace APIs", "WebHooks", "RestAPIs", "JSON/HTTP Requests"],
     },
   ];
 
