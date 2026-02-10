@@ -21,7 +21,7 @@ const projects = [
     title: "Reach+ | Gamification App for PwDs",
     description:
       "Mobile therapy app for cerebral palsy patients with gamified video modules, real-time Firebase sync, and automated email notifications via n8n. Focused on accessibility and user experience.",
-    tech: ["React Native", "Firebase", "Figma", "n8n Automation"],
+    tech: ["React Native", "Firebase", "Figma", "n8n"],
     github: "https://github.com/navs42/Gamification-App-for-Pwds.git",
     link: "",
   },
@@ -45,7 +45,7 @@ const projects = [
     title: "Yotube trend Analayzer using n8n",
     description: 
       "An automated workflow built with n8n that fetches YouTube videos for a given topic, filters the top trending ones, and saves them automatically to Google Sheets for easy analysis.",
-    tech:["n8n","YouTube Data API", "Google Sheets API", "JavaScript (workflow scripting)"],
+    tech:["n8n", "JavaScript (workflow scripting)"],
     github:"https://github.com/navs42/youtube-trend-analyzer-n8n.git"
   }
 ];
