@@ -13,7 +13,7 @@ const projects = [
     title: "Multi-Label Emotion Classification",
     description:
       "BERT-based NLP model for detecting multiple emotions simultaneously in text. Deployed with Flask API for real-time emotion analysis with high accuracy.",
-    tech: ["ML", "NLP", "Flask", "BERT", "Python"],
+    tech: ["ML", "Flask", "Python"],
     github: "https://github.com/navs42/Multi-Label-Emotion-Classification.git",
     link: "",
   },
@@ -29,7 +29,7 @@ const projects = [
     title: "SmartHire AI | AI-Powered Resume Screening & Shortlisting System using n8n",
     description:
       "AI-powered automation system using n8n that extracts resumes from emails, analyzes them against job descriptions, and logs evaluation results in Google Sheets.",
-    tech: ["n8n","Gemini AI", "Google Drive", "Google sheets","Gmail API"],
+    tech: ["n8n","Gemini AI", "API"],
     github: "https://github.com/navs42/SmartHire-AI.git",
     link: "",
   },
