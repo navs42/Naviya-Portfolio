@@ -18,13 +18,13 @@ const Services = () => {
       title: "AI & Machine Learning Solutions",
       description:
         "NLP, ML model development, deployment, and data-driven insights. I create intelligent systems that learn, adapt, and provide meaningful predictions for real-world problems.",
-      technologies: ["Python", "TensorFlow", "NLP", "BERT", "Data Processing", "Flask"],
+      technologies: ["Python", "TensorFlow", "NLP", "BERT"],
     },{
       icon:WorkflowIcon ,
       title: "n8n Automations",
       description:
         "Workflow automation, system integration, and process optimization. I design intelligent n8n workflows that connect apps, automate repetitive tasks, and streamline business operations with efficiency and precision.",
-      technologies: ["n8n", "JavaScript", "Google WorkSpace APIs", "WebHooks", "RestAPIs", "JSON/HTTP Requests"],
+      technologies: ["n8n", "JavaScript", "WebHooks", "RestAPIs", "JSON/HTTP Requests"],
     },
   ];
 
